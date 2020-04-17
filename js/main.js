@@ -6,7 +6,7 @@ $(document).ready(function () {
 });
 
 setRandomHeaderBackground = () => {
-    let randNumber = Math.floor(Math.random() * 6);
+    let randNumber = Math.floor(Math.random() * BG_IMAGES);
     let headerElement;
     if (headerElement = document.getElementById("home-header")) {
         headerElement.style.background = `url(https://raw.githubusercontent.com/dvcarrillo/portfolio-bootstrap/master/img/home-bg/${randNumber}.jpg) no-repeat center top`;
