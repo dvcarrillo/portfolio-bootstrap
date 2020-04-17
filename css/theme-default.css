@@ -83,7 +83,6 @@ nav a {
 .nav-btn-clear:hover {
     cursor: pointer;
     color: #1e272e !important;
-    /* border: 1px solid w; */
 }
 
 .nav-btn-clear:hover::before {
@@ -97,13 +96,13 @@ nav a {
 .rotating-text {
     position: absolute;
     left: 0;
-    bottom: 0;
-    margin-left: 5vh;
-    margin-bottom: 27vh;
+    bottom: 25%;
+    margin-left: 3%;
+    margin-bottom: 0;
     font-weight: 300;
-    font-size: 10vw;
+    font-size: 8vw;
     color: rgba(255, 255, 255, 0.8);
-    width: 95vw;
+    width: 90vw;
 }
 
 .rotating-text p {
