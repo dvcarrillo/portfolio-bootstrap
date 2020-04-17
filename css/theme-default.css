@@ -1,13 +1,57 @@
+/* HEADER & NAVBAR */
+
 header {
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
+
+    background-color: #ffffff;
+    min-height: 40vh;
+
+    background: url(../img/home-bg/1.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .header-white {
-    background-color: #ffffff;
-    min-height: 40vh;
+    /* background-color: #ffffff;
+    min-height: 40vh; */
 }
 
 .header-white .navbar {
     background-color: transparent !important;
+}
+
+.nav-btn {
+    z-index: 1;
+    position: relative;
+    font-size: 1.15rem;
+    font-family: inherit;
+    color: rgba(0, 0, 0, 0.9)!important;
+    padding: 0.25em 0.5em;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+}
+
+.nav-btn::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+}
+
+.nav-btn:hover {
+    cursor: pointer;
+    color: white !important;
+}
+
+.nav-btn:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
 }
