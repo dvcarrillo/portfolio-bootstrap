@@ -1,4 +1,4 @@
-let BG_IMAGES = 5;
+let BG_IMAGES = 4;
 
 $(document).ready(function () {
     console.log("window loaded");
