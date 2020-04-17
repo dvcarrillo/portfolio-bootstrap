@@ -1,4 +1,4 @@
-let BG_IMAGES = 4;
+let BG_IMAGES = 5;
 
 $(document).ready(function () {
     console.log("window loaded");
@@ -8,7 +8,7 @@ $(document).ready(function () {
 setRandomHeaderBackground = () => {
     let randNumber = Math.floor(Math.random() * BG_IMAGES);
     let imgUrl = `https://raw.githubusercontent.com/dvcarrillo/portfolio-bootstrap/master/img/home-bg/${randNumber}.jpg`;
-    
+
     let headerElement;
     if (headerElement = document.getElementById("home-header")) {
         headerElement.style.background = `url(${imgUrl})`;
