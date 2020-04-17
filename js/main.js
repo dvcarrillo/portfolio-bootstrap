@@ -1,8 +1,8 @@
 // Total number of backgrounds
 let BG_IMAGES = 5;
 // Colors of each background
-var DARK_BG = [0, 2, 3];
-var CLEAR_BG = [1, 4];
+var DARK_BG = [2, 3];
+var CLEAR_BG = [0, 1, 4];
 var SELECTED_BG = 0;
 
 $(document).ready(function () {
