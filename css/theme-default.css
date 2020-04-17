@@ -3,9 +3,13 @@
 header {
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    background-color: black;
+    background-color: white;
     background-size: cover;
     min-height: 100vh;
+}
+
+.title-accent {
+    font-weight: 500;
 }
 
 .navbar {
@@ -17,10 +21,10 @@ header {
     position: relative;
     font-size: 1.15rem;
     font-family: inherit;
-    color: rgba(0, 0, 0, 0.9)!important;
+    color: #1e272e !important;
     padding: 0.25em 0.5em;
     outline: none;
-    border: 1px solid rgba(0, 0, 0, 0.9);
+    border: 1px solid #1e272e;
 }
 
 .nav-btn::before {
@@ -31,7 +35,7 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: black;
+    background-color: #1e272e;
     transform-origin: center right;
     transform: scaleX(0);
     transition: transform 0.25s ease-in-out;
@@ -39,7 +43,7 @@ header {
 
 .nav-btn:hover {
     cursor: pointer;
-    color: white !important;
+    color: #d2dae2 !important;
 }
 
 .nav-btn:hover::before {
@@ -48,3 +52,7 @@ header {
 }
 
 /* BODY */
+
+/* FOOTER */
+footer {
+}
