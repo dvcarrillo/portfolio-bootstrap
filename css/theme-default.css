@@ -1,0 +1,8 @@
+.header-white {
+    background-color: #ffffff;
+    min-height: 50vh;
+}
+
+.header-white .navbar {
+    background-color: transparent !important;
+}
