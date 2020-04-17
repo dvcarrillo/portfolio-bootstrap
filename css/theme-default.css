@@ -3,10 +3,7 @@
 header {
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-
-    background-color: #ffffff;
-    min-height: 40vh;
-
+    background-color: black;
     background-size: cover;
     min-height: 100vh;
 }
@@ -54,3 +51,5 @@ header {
     transform-origin: center left;
     transform: scaleX(1);
 }
+
+/* BODY */

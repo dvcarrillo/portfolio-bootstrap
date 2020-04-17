@@ -12,7 +12,7 @@ setRandomHeaderBackground = () => {
         headerElement.style.background = `url(https://raw.githubusercontent.com/dvcarrillo/portfolio-bootstrap/master/img/home-bg/${randNumber}.jpg)`;
         headerElement.style.backgroundPosition = 'center top';
         headerElement.style.backgroundRepeat = 'no-repeat';
-        headerElement.style.backgroundSize = '100%';
+        headerElement.style.backgroundSize = 'cover';
     }
 
 }
