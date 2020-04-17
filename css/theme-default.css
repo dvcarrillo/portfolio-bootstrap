@@ -23,7 +23,7 @@ nav a {
 .nav-btn {
     z-index: 1;
     position: relative;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-family: inherit;
     color: #1e272e !important;
     padding: 0.25em 0.5em;
@@ -72,6 +72,7 @@ nav a {
 
 .rotating-text p {
     display: block;
+    margin-bottom: 0;
 }
 
 .rotating-text .word {
