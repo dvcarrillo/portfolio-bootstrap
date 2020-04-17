@@ -3,12 +3,13 @@ let BG_IMAGES = 5;
 // Colors of each background
 var DARK_BG = [0, 2, 3];
 var CLEAR_BG = [1, 4];
+var SELECTED_BG = 0;
 
 $(document).ready(function () {
-    console.log("window loaded");
-    let randNumber = Math.floor(Math.random() * BG_IMAGES);
-    setHeaderBackground(randNumber);
-    setRotatingTextColor(randNumber);
+    SELECTED_BG = Math.floor(Math.random() * BG_IMAGES);
+    setHeaderBackground(SELECTED_BG);
+    setNavbarColor(SELECTED_BG);
+    setRotatingTextColor(SELECTED_BG);
 });
 
 setHeaderBackground = (definedBackground) => {
@@ -24,11 +25,18 @@ setHeaderBackground = (definedBackground) => {
 }
 
 setRotatingTextColor = (definedBackground) => {
-    let rotatingText =  document.getElementById('rotating-text');
-    if (DARK_BG.includes(definedBackground)) {
-        rotatingText.style.color = 'rgba(255, 255, 255, 0.8)';
-    }
-    else {
+    let rotatingText = document.getElementById('rotating-text');
+    if (CLEAR_BG.includes(definedBackground)) {
         rotatingText.style.color = 'rgba(30, 39, 46, 0.8)';
+    }
+}
+
+setNavbarColor = (definedBackground) => {
+    if (DARK_BG.includes(definedBackground)) {
+        document.querySelector("#navbar-brand").style.color = "white";
+        document.querySelectorAll(".nav-link").forEach(link => {
+            link.style.color = "white";
+        });
+        $('#nav-btn').removeClass('nav-btn-dark').addClass('nav-btn-clear');
     }
 }

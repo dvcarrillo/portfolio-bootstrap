@@ -36,7 +36,6 @@ function animateLetterIn(nw, i) {
 }
 
 function splitLetters(word) {
-  console.log("splitLetters -> word", word)
   var content = word.innerHTML;
   word.innerHTML = '';
   var letters = [];
@@ -49,7 +48,6 @@ function splitLetters(word) {
   }
   
   wordArray.push(letters);
-  console.log("splitLetters -> wordArray", wordArray)
 }
 
 changeWord();

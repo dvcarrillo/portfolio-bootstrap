@@ -8,7 +8,7 @@ header {
 }
 
 nav a {
-    color: #1e272e!important;
+    /* color: #1e272e!important; */
 }
 
 .title-accent {
@@ -20,18 +20,18 @@ nav a {
     padding: 0.5rem 2rem;
 }
 
-.nav-btn {
+.nav-btn-dark {
     z-index: 1;
     position: relative;
     font-size: 1.1rem;
     font-family: inherit;
-    color: #1e272e !important;
+    /* color: #1e272e !important; */
     padding: 0.25em 0.5em;
     outline: none;
     border: 1px solid #1e272e;
 }
 
-.nav-btn::before {
+.nav-btn-dark::before {
     content: '';
     z-index: -1;
     position: absolute;
@@ -45,12 +45,48 @@ nav a {
     transition: transform 0.25s ease-in-out;
 }
 
-.nav-btn:hover {
+.nav-btn-dark:hover {
     cursor: pointer;
-    color: #d2dae2 !important;
+    color: white !important;
 }
 
-.nav-btn:hover::before {
+.nav-btn-dark:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
+}
+
+.nav-btn-clear {
+    z-index: 1;
+    position: relative;
+    font-size: 1.1rem;
+    font-family: inherit;
+    color: white !important;
+    padding: 0.25em 0.5em;
+    outline: none;
+    border: 1px solid white;
+}
+
+.nav-btn-clear::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+}
+
+.nav-btn-clear:hover {
+    cursor: pointer;
+    color: #1e272e !important;
+    /* border: 1px solid w; */
+}
+
+.nav-btn-clear:hover::before {
     transform-origin: center left;
     transform: scaleX(1);
 }
