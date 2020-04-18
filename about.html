@@ -2,25 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <title>about - david : vargas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="personal portfolio of david vargas, a software engineer based in bordeaux">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/2ac04239e4.js" crossorigin="anonymous"></script>
+
+  <!-- CSS sheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/page-default.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    hey
-    <!-- JS files -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-    <script src="js/rotating-text.js"></script>
+  <header class="header-white home-header" id="home-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+      <a class="navbar-brand" id="navbar-brand" href="index.html">david <span class="title-accent">:</span> vargas</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span id="mobile-menu-btn">
+          <i class="far fa-circle" id="mobile-menu-btn-open" onclick="openMobileMenu()"></i>
+          <i class="far fa-times-circle" id="mobile-menu-btn-close" onclick="closeMobileMenu()"></i>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+          </li> -->
+          <li class="nav-item active">
+            <a class="nav-link nav-link-white" href="about.html">about <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-white" href="#">portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-white" href="#">cv</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-white" href="#">contact</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">disabled</a>
+          </li> -->
+        </ul>
+        <a class="nav-btn-dark" id="nav-btn">contact me</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="rotating-text" id="rotating-text">
+    <p>hi, i am</p>
+    <p>
+      <span class="word">a human being.</span>
+      <span class="word">david.</span>
+      <span class="word">an engineer.</span>
+      <span class="word">a design lover.</span>
+    </p>
+  </div>
+
+  <footer>
+
+  </footer>
+
+  <!-- JS files -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="js/page-default.js"></script>
 </body>
 
 </html>
