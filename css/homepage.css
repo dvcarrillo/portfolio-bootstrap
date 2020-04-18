@@ -130,8 +130,8 @@ nav a {
 .rotating-text {
     position: absolute;
     left: 0;
-    bottom: 14vmax;
-    margin-left: 3vw;
+    bottom: 12vmax;
+    margin-left: 4vw;
     font-weight: 400;
     font-size: 7vmax;
     color: rgba(255, 255, 255, 0.7);
