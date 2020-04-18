@@ -27,7 +27,7 @@ setHeaderBackground = (definedBackground) => {
 setRotatingTextColor = (definedBackground) => {
     let rotatingText = document.getElementById('rotating-text');
     if (CLEAR_BG.includes(definedBackground)) {
-        rotatingText.style.color = 'rgba(30, 39, 46, 0.8)';
+        rotatingText.style.color = 'rgba(30, 39, 46, 0.7)';
     }
 }
 
