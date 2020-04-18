@@ -8,7 +8,8 @@
     font-weight: 200;
     background-color: rgba(30, 39, 46,1.0);
     background-size: cover;
-    min-height: 50vh;
+    min-height: 45vh;
+    position: relative;
 }
 
 nav a {
@@ -127,51 +128,17 @@ nav a {
     }
 }
 
+.header-title {
+    color: rgba(255, 255, 255, 0.7)!important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 0 0 2rem;
+    font-size: 17vmin;
+    border: 1px solid transparent;
+}
+
 /* BODY */
 
-/* Rotating text */
-
-.rotating-text {
-    position: absolute;
-    left: 0;
-    bottom: 14vmax;
-    margin-left: 3vw;
-    font-weight: 400;
-    font-size: 7vmax;
-    color: rgba(255, 255, 255, 0.7);
-    width: 90vw;
-}
-
-.rotating-text p {
-    display: block;
-    margin-bottom: 0;
-}
-
-.rotating-text .word {
-    position: absolute;
-    width: 100%;
-    opacity: 0;
-}
-
-.rotating-text .letter {
-    display: inline-block;
-    position: relative;
-    transform: translateZ(25px);
-    transform-origin: 50% 50% 25px;
-}
-
-.rotating-text .letter.out {
-    transform: rotateX(90deg);
-    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.rotating-text .letter.behind {
-    transform: rotateX(-90deg);
-}
-
-.rotating-text .letter.in {
-    transform: rotateX(0deg);
-    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
 
 /* FOOTER */
