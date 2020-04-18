@@ -6,9 +6,9 @@
 
 .home-header {
     font-weight: 200;
-    background-color: rgba(30, 39, 46,1.0);
+    background-color: rgba(30, 39, 46, 1.0);
     background-size: cover;
-    min-height: 45vh;
+    min-height: 50vh;
     position: relative;
 }
 
@@ -21,7 +21,7 @@ nav a {
 }
 
 .navbar {
-    background-color: rgba(30, 39, 46,1.0)!important;
+    background-color: rgba(30, 39, 46, 1.0)!important;
     padding: 0.5rem 2rem;
 }
 
@@ -79,7 +79,7 @@ nav a {
 
 .nav-btn-dark:hover {
     cursor: pointer;
-    color: rgba(30, 39, 46,1.0) !important;
+    color: rgba(30, 39, 46, 1.0) !important;
 }
 
 .nav-btn-dark:hover::before {
@@ -122,6 +122,7 @@ nav a {
 }
 
 /* Hide contact button on lower resolutions */
+
 @media only screen and (max-width: 992px) {
     #nav-btn {
         display: none;
@@ -129,16 +130,94 @@ nav a {
 }
 
 .header-title {
-    color: rgba(255, 255, 255, 0.7)!important;
+    color: rgba(255, 255, 255, 1.0)!important;
     position: absolute;
     bottom: 0;
     left: 0;
     margin: 0 0 0 2rem;
-    font-size: 17vmin;
+    font-size: 18vmin;
+    font-weight: 300;
     border: 1px solid transparent;
 }
 
 /* BODY */
 
+.body-content {
+    margin: 6rem 20vw;
+    min-width: 20rem;
+    color: rgba(30, 39, 46, 1.0);
+}
+
+.body-content h2 {
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.body-content p {
+    font-weight: 200;
+    font-size: 1.3em;
+    margin-bottom: 50px;
+}
 
 /* FOOTER */
+
+footer {
+    min-height: 60vh;
+    margin-top: 150px;
+    background-color: rgba(30, 39, 46, 1.0);
+    border: solid rgba(30, 39, 46, 1.0);
+    padding: 40px 20px;
+}
+
+footer h1 {
+    color: rgba(255, 255, 255, 1.0);
+    font-weight: 300;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10vmin;
+}
+
+footer h2 {
+    color: rgba(255, 255, 255);
+    font-weight: 300;
+}
+
+footer .footer-credits {
+    color: white;
+}
+
+.button-clear {
+    z-index: 1;
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 1) !important;
+    padding: 0.5em 0.75em;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.button-clear::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 1);
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+}
+
+.button-clear:hover {
+    cursor: pointer;
+    color: rgba(30, 39, 46, 1.0) !important;
+}
+
+.button-clear:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
+}
