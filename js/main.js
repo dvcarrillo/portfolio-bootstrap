@@ -33,9 +33,9 @@ setRotatingTextColor = (definedBackground) => {
 
 setNavbarColor = (definedBackground) => {
     if (DARK_BG.includes(definedBackground)) {
-        document.querySelector("#navbar-brand").style.color = "white";
+        document.querySelector("#navbar-brand").style.color = "rgba(255, 255, 255, 1)";
         document.querySelectorAll(".nav-link").forEach(link => {
-            link.style.color = "white";
+            link.classList.add('nav-link-white');
         });
         $('#nav-btn').removeClass('nav-btn-dark').addClass('nav-btn-clear');
     }

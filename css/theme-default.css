@@ -23,6 +23,14 @@ nav a {
     padding: 0.5rem 2rem;
 }
 
+.nav-link-white {
+    color: rgba(255, 255, 255, 0.7)!important;
+}
+
+.nav-link-white:hover {
+    color: rgba(255, 255, 255, 1)!important;
+}
+
 .nav-btn-dark {
     z-index: 1;
     position: relative;
