@@ -3,6 +3,7 @@
 }
 
 /* HEADER & NAVBAR */
+
 header {
     font-weight: 200;
     background-color: white;
@@ -21,6 +22,14 @@ nav a {
 .navbar {
     background-color: transparent !important;
     padding: 0.5rem 2rem;
+}
+
+.navbar-toggler {
+    border: 1px solid transparent!important;
+}
+
+#mobile-menu-btn {
+    color: rgba(30, 39, 46, 1.0);
 }
 
 .nav-link-white {
@@ -99,9 +108,17 @@ nav a {
     transform: scaleX(1);
 }
 
+/* Hide contact button on lower resolutions */
+@media only screen and (max-width: 992px) {
+    #nav-btn {
+        display: none;
+    }
+}
+
 /* BODY */
 
 /* Rotating text */
+
 .rotating-text {
     position: absolute;
     left: 0;
