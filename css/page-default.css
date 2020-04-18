@@ -8,8 +8,9 @@
     font-weight: 200;
     background-color: rgba(30, 39, 46, 1.0);
     background-size: cover;
-    min-height: 50vh;
+    height: 50vh;
     position: relative;
+    min-height: 310px;
 }
 
 nav a {
@@ -22,7 +23,7 @@ nav a {
 
 .navbar {
     background-color: rgba(30, 39, 46, 1.0)!important;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 4vw;
 }
 
 .navbar-toggler {
@@ -126,10 +127,10 @@ nav a {
     position: absolute;
     bottom: 0;
     left: 0;
-    margin: 0 0 0 2rem;
+    margin: 0;
+    padding: 1vmin 4vw;
     font-size: 18vmin;
     font-weight: 300;
-    border: 1px solid transparent;
 }
 
 /* BODY */
