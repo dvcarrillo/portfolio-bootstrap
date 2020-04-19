@@ -23,8 +23,8 @@ fadeOutLoadingScreen = (callback) => {
 }
 
 fadeOutLoadingScreen(function () {
-    jQuery('#rotating-text').fadeIn();
-    jQuery('#loading-screen').fadeOut("slow");
+    $('#rotating-text').fadeIn();
+    $('#loading-screen').fadeOut("slow");
 });
 
 setHeaderBackground = (definedBackground) => {
