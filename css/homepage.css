@@ -12,7 +12,7 @@
 }
 
 nav a {
-    color: #1e272e;
+    color: rgba(25, 26, 26, 1.0);
 }
 
 .title-accent {
@@ -29,7 +29,7 @@ nav a {
 }
 
 #mobile-menu-btn {
-    color: rgba(30, 39, 46, 1.0);
+    color: rgba(25, 26, 26, 1.0);
 }
 
 #mobile-menu-btn-open {
@@ -52,11 +52,10 @@ nav a {
     z-index: 1;
     position: relative;
     font-size: 1.1rem;
-    /* color: #1e272e !important; */
     padding: 0.25em 0.5em;
     outline: none;
     text-decoration: none;
-    border: 1px solid #1e272e;
+    border: 1px solid rgba(25, 26, 26, 1.0);
 }
 
 .nav-btn-dark::before {
@@ -67,7 +66,7 @@ nav a {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #1e272e;
+    background-color: rgba(25, 26, 26, 1.0);
     transform-origin: center right;
     transform: scaleX(0);
     transition: transform 0.25s ease-in-out;
@@ -111,7 +110,7 @@ nav a {
 .nav-btn-clear:hover {
     cursor: pointer;
     text-decoration: none;
-    color: #1e272e !important;
+    color: rgba(25, 26, 26, 1.0) !important;
 }
 
 .nav-btn-clear:hover::before {
@@ -198,7 +197,7 @@ nav a {
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
-    color: white;
+    color: rgba(255, 255, 255, 1);
 }
 
 .loading-title {

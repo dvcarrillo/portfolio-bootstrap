@@ -6,7 +6,7 @@
 
 .home-header {
     font-weight: 200;
-    background-color: rgba(30, 39, 46, 1.0);
+    background-color: rgba(25, 26, 26, 1.0);
     background-size: cover;
     height: 50vh;
     position: relative;
@@ -22,7 +22,7 @@ nav a {
 }
 
 .navbar {
-    background-color: rgba(30, 39, 46, 1.0)!important;
+    background-color: rgba(25, 26, 26, 1.0)!important;
     padding: 0.5rem 4vw;
 }
 
@@ -81,7 +81,7 @@ nav a {
 .nav-btn-dark:hover {
     cursor: pointer;
     text-decoration: none;
-    color: rgba(30, 39, 46, 1.0) !important;
+    color: rgba(25, 26, 26, 1.0) !important;
 }
 
 .nav-btn-dark:hover::before {
@@ -115,7 +115,7 @@ nav a {
 
 .nav-btn-clear:hover {
     cursor: pointer;
-    color: #1e272e !important;
+    color: rgba(25, 26, 26, 1.0) !important;
 }
 
 .nav-btn-clear:hover::before {
@@ -140,7 +140,7 @@ nav a {
     margin: 5rem auto;
     padding: 25px;
     max-width: 45rem;
-    color: rgba(30, 39, 46, 1.0);
+    color: rgba(25, 26, 26, 1.0);
 }
 
 .body-content h2 {
@@ -165,13 +165,13 @@ nav a {
 footer {
     min-height: 60vh;
     margin-top: 150px;
-    background-color: rgba(30, 39, 46, 1.0);
-    border: solid rgba(30, 39, 46, 1.0);
+    background-color: rgba(25, 26, 26, 1.0);
+    border: solid rgba(25, 26, 26, 1.0);
     position: relative;
 }
 
 .footer-title {
-    padding: 40px 20px;
+    padding: 20px 20px 60px 20px;
     margin-bottom: 20px;
 }
 
@@ -214,8 +214,8 @@ footer {
 }
 
 .social-links a {
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    color: rgba(255, 255, 255, 0.7)!important;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5)!important;
     text-decoration: none;
     padding: 10px;
     font-size: 1.2em;
@@ -256,7 +256,7 @@ footer {
 .button-clear:hover {
     cursor: pointer;
     text-decoration: none;
-    color: rgba(30, 39, 46, 1.0) !important;
+    color: rgba(25, 26, 26, 1.0) !important;
 }
 
 .button-clear:hover::before {
