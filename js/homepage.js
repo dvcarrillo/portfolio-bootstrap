@@ -1,5 +1,6 @@
 // Total number of backgrounds
 let BG_IMAGES = 5;
+
 // Colors of each background
 var DARK_BG = [2, 3];
 var CLEAR_BG = [0, 1, 4];
@@ -10,6 +11,19 @@ $(document).ready(function () {
     setHeaderBackground(SELECTED_BG);
     setNavbarColor(SELECTED_BG);
     setRotatingTextColor(SELECTED_BG);
+});
+
+fadeOutLoadingScreen = (callback) => {
+    var intervalId = window.setInterval(function () {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalId);
+            callback.call(this);
+        }
+    }, 1000);
+}
+
+fadeOutLoadingScreen(function () {
+    jQuery('#loading-screen').fadeOut("slow");
 });
 
 setHeaderBackground = (definedBackground) => {

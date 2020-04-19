@@ -120,6 +120,7 @@ nav a {
 }
 
 /* Hide contact button on lower resolutions */
+
 @media only screen and (max-width: 992px) {
     #nav-btn {
         display: none;
@@ -173,4 +174,97 @@ nav a {
     transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* FOOTER */
+/* LOADING SCREEN */
+
+.loading-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.loading-navbar {
+    padding: 0.5rem 4vw;
+    font-weight: 200;
+}
+
+.loading-navbar p {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    color: white;
+}
+
+.loading-title {
+    position: absolute;
+    left: 0;
+    bottom: 1.5vmax;
+    margin-left: 4vw;
+    font-weight: 400;
+    font-size: 7vmax;
+    color: rgba(255, 255, 255, 0.7);
+    width: 90vw;
+    -webkit-animation: fade 3s infinite;
+    animation: fade 3s infinite;
+    -moz-animation: fade 3s infinite;
+    -o-animation: fade 3s infinite;
+}
+
+.loading-title p {
+    margin: 0;
+}
+
+/* ANIMATIONS */
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0.5
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0.5
+    }
+}
+
+@-moz-keyframes fade {
+    0% {
+        opacity: 0.5
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.5
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0.5
+    }
+}
+
+@-o-keyframes fade {
+    0% {
+        opacity: 0.5
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0.5
+    }
+}

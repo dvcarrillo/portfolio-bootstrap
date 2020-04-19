@@ -1,7 +1,7 @@
 const footerSentences = [
     'like what you see?',
     'does it look appealing?',
-    'why don\'t we talk?',
+    'want to hear more?',
     'want to know more?'
 ]
 
