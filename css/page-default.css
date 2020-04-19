@@ -155,6 +155,11 @@ nav a {
     margin-bottom: 50px;
 }
 
+/* Leaflet */
+#mapid {
+    height: 180px;
+}
+
 /* FOOTER */
 
 footer {
@@ -260,6 +265,7 @@ footer {
 }
 
 /* RULES FOR SMALLER SCREENS */
+
 /* Hide contact button on lower resolutions */
 
 @media only screen and (max-width: 992px) {

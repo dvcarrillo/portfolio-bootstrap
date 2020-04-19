@@ -11,6 +11,14 @@
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/2ac04239e4.js" crossorigin="anonymous"></script>
 
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+
     <!-- CSS sheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -64,6 +72,7 @@
             Morbi hendrerit eu lacus eu semper. Duis laoreet ex risus, id sagittis lectus tincidunt vitae. Mauris
             interdum, urna id mattis posuere, lacus nisi varius lectus, cursus mattis enim urna at leo.
         </p>
+
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id elementum dui, vel iaculis arcu.
             Praesent vehicula sem neque, id bibendum lacus porta id. Mauris et metus a est porttitor congue sed at eros.
@@ -73,6 +82,8 @@
             interdum, urna id mattis posuere, lacus nisi varius lectus, cursus mattis enim urna at leo.
         </p>
     </div>
+
+    <div id="mapid"></div>
 
     <div class="body-content">
         <p>
@@ -98,9 +109,14 @@
                     <div class="col-lg-6" id="credits-container">
                         <h2>credits</h2>
                         <p>
-                            code & design by me, available on <a href="http://github.com/dvcarrillo/portfolio-bootstrap">github</a></br>
-                            find the displayed photos on my <a href="http://flickr.com/dvcarrillo">flickr profile</a></br>
-                            <span id="social-links-mini" style="display: none;">follow me on <a href="https://github.com/dvcarrillo/">github</a>, <a href="https://www.linkedin.com/in/dvcarrillo/">linkedin</a> and <a href="https://www.flickr.com/photos/davidvargas996/">flickr</a></span>
+                            code & design by me, available on <a
+                                href="http://github.com/dvcarrillo/portfolio-bootstrap">github</a></br>
+                            find the displayed photos on my <a href="http://flickr.com/dvcarrillo">flickr
+                                profile</a></br>
+                            <span id="social-links-mini" style="display: none;">follow me on <a
+                                    href="https://github.com/dvcarrillo/">github</a>, <a
+                                    href="https://www.linkedin.com/in/dvcarrillo/">linkedin</a> and <a
+                                    href="https://www.flickr.com/photos/davidvargas996/">flickr</a></span>
                         </p>
                     </div>
                     <div class="col-sm-6" id="social-links-container">
@@ -109,7 +125,8 @@
                             <a class="button-clear" href="https://github.com/dvcarrillo/">github</a>
                             <a class="button-clear" href="https://www.linkedin.com/in/dvcarrillo/">linkedin</a>
                             <a class="button-clear" href="https://www.flickr.com/photos/davidvargas996/">flickr</a>
-                            <a class="button-clear" href="https://stackoverflow.com/users/4598461/david-vargas">stackoverflow</a>
+                            <a class="button-clear"
+                                href="https://stackoverflow.com/users/4598461/david-vargas">stackoverflow</a>
                         </p>
                     </div>
                 </div>
@@ -126,6 +143,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="js/page-default.js"></script>
+    <script src="js/leaflet-map.js"></script>
 </body>
 
 </html>
