@@ -80,6 +80,7 @@ nav a {
 
 .nav-btn-dark:hover {
     cursor: pointer;
+    text-decoration: none;
     color: rgba(30, 39, 46, 1.0) !important;
 }
 
@@ -225,7 +226,7 @@ footer {
     font-weight: 100;
     color: rgba(255, 255, 255, 1) !important;
     padding: 0.5em 0.75em;
-    outline: none;
+    text-decoration: none;
     border: 1px solid rgba(255, 255, 255, 1);
 }
 
@@ -245,6 +246,7 @@ footer {
 
 .button-clear:hover {
     cursor: pointer;
+    text-decoration: none;
     color: rgba(30, 39, 46, 1.0) !important;
 }
 
