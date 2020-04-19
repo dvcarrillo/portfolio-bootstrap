@@ -133,6 +133,7 @@ nav a {
 
 .rotating-text {
     position: absolute;
+    display: none;
     left: 0;
     bottom: 12vmax;
     margin-left: 4vw;
@@ -213,6 +214,11 @@ nav a {
     animation: fade 3s infinite;
     -moz-animation: fade 3s infinite;
     -o-animation: fade 3s infinite;
+}
+
+.loading-title p {
+    display: block;
+    margin-bottom: 0;
 }
 
 .loading-title p {
