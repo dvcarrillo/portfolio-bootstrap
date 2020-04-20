@@ -10,6 +10,11 @@ const footerSentences = [
 
 $(document).ready(function () {
     setRandomFooterSentence();
+    $(function() {
+        $("#body-container").animate({ opacity: 1 }, { duration: 800, queue: false });
+        $("#body-container").animate({ "margin-top": "100px" }, { duration: 400, queue: false });
+    });
+    $('.header-title').fadeIn();
 });
 
 setRandomFooterSentence = () => {

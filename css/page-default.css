@@ -132,9 +132,15 @@ nav a {
     padding: 1vmin 4vw;
     font-size: 18vmin;
     font-weight: 300;
+    display: none;
 }
 
 /* BODY */
+
+.body-container {
+    opacity: 0;
+    margin-top: 150px;
+}
 
 .narrow-paragraph {
     margin: 5rem auto;
