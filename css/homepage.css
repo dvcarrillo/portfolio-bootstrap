@@ -273,3 +273,13 @@ nav a {
         opacity: 0.5
     }
 }
+
+/* RULES FOR SMALLER SCREENS */
+
+/* Hide contact button on lower resolutions */
+
+@media only screen and (max-width: 380px) {
+    .loading-title {
+        display: none;
+    }
+}
