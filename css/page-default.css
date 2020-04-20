@@ -136,27 +136,27 @@ nav a {
 
 /* BODY */
 
-.body-content {
+.narrow-paragraph {
     margin: 5rem auto;
     padding: 25px;
     max-width: 45rem;
 }
 
-.body-content h2 {
+.narrow-paragraph h2 {
     font-weight: 400;
     margin-bottom: 2rem;
     font-size: 3rem;
     color: rgba(25, 26, 26, 1.0);
 }
 
-.body-content h3 {
+.narrow-paragraph h3 {
     font-weight: 400;
     margin-bottom: 2rem;
     font-size: 2rem;
     color: rgba(25, 26, 26, 1.0);
 }
 
-.body-content p {
+.narrow-paragraph p {
     font-weight: 300;
     font-size: 1.3em;
     margin-bottom: 50px;
