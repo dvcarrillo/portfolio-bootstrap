@@ -207,6 +207,26 @@ nav a {
     height: 320px;
 }
 
+.leaflet-popup-content-wrapper {
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 1.2em;
+    box-shadow: none;
+}
+
+.leaflet-popup-content-wrapper b {
+    border-radius: 0;
+    font-weight: 500;
+}
+
+.leaflet-popup-tip-container {
+    box-shadow: none;
+}
+
+.leaflet-popup-close-button {
+    display: none;
+}
+
 /* FOOTER */
 
 footer {

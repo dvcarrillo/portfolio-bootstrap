@@ -1,4 +1,4 @@
-var mymap = L.map('mapid').setView([51.289226, 10.017541], 3);
+var mymap = L.map('mapid').setView([53.644636, 10.019475], 3);
 
 mymap.removeControl(mymap.zoomControl);
 
