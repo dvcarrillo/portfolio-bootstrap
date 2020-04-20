@@ -142,13 +142,13 @@ nav a {
     margin-top: 150px;
 }
 
-.body-container a {
+.body-container p>a {
     position: relative;
     z-index: 1;
     color: rgba(25, 26, 26, 0.7);
 }
 
-.body-container a::before {
+.body-container p>a::before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -162,12 +162,12 @@ nav a {
     transition: all 0.1s ease-in-out;
 }
 
-.body-container a:hover::before {
+.body-container p>a:hover::before {
     transform: scaleY(1);
     background-color: #0fbcf9;
 }
 
-.body-container a:hover {
+.body-container p>a:hover {
     text-decoration: none;
     color: rgba(255, 255, 255, 1.0);
 }
