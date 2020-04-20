@@ -142,6 +142,36 @@ nav a {
     margin-top: 150px;
 }
 
+.body-container a {
+    position: relative;
+    z-index: 1;
+    color: rgba(25, 26, 26, 0.7);
+}
+
+.body-container a::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -0.15em;
+    right: -0.15em;
+    background-color: #0fbcf9;
+    transform-origin: bottom center;
+    transform: scaleY(0.1);
+    transition: all 0.1s ease-in-out;
+}
+
+.body-container a:hover::before {
+    transform: scaleY(1);
+    background-color: #0fbcf9;
+}
+
+.body-container a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1.0);
+}
+
 .narrow-paragraph {
     margin: 5rem auto;
     padding: 25px;
@@ -172,6 +202,7 @@ nav a {
 }
 
 /* Leaflet */
+
 #mapid {
     height: 320px;
 }
