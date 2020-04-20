@@ -1,8 +1,11 @@
 const footerSentences = [
     'like what you see?',
-    'does it look appealing?',
+    'looks appealing?',
     'want to hear more?',
-    'want to know more?'
+    'want to know more?',
+    'don\'t be shy',
+    'sounds good?',
+    'are you curious?'
 ]
 
 $(document).ready(function () {

@@ -140,24 +140,34 @@ nav a {
     margin: 5rem auto;
     padding: 25px;
     max-width: 45rem;
-    color: rgba(25, 26, 26, 1.0);
 }
 
 .body-content h2 {
     font-weight: 400;
     margin-bottom: 2rem;
     font-size: 3rem;
+    color: rgba(25, 26, 26, 1.0);
+}
+
+.body-content h3 {
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: rgba(25, 26, 26, 1.0);
 }
 
 .body-content p {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.3em;
     margin-bottom: 50px;
+    color: rgba(25, 26, 26, 0.7);
+    line-height: 3rem;
+    letter-spacing: 0.05rem;
 }
 
 /* Leaflet */
 #mapid {
-    height: 180px;
+    height: 320px;
 }
 
 /* FOOTER */
