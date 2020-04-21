@@ -22,10 +22,12 @@ fadeOutLoadingScreen = (callback) => {
     }, 1000);
 }
 
-fadeOutLoadingScreen(function () {
-    $('#rotating-text').fadeIn();
-    $('#loading-screen').fadeOut("slow");
-});
+$(window).on('load', () => {
+    fadeOutLoadingScreen(function () {
+        $('#rotating-text').fadeIn();
+        $('#loading-screen').fadeOut("slow");
+    });
+})
 
 setHeaderBackground = (definedBackground) => {
     let imgUrl = `https://raw.githubusercontent.com/dvcarrillo/portfolio-bootstrap/master/img/home-bg/${definedBackground}.jpg`;
