@@ -138,8 +138,10 @@ nav a {
 /* BODY */
 
 .body-container {
+    /* Required for the initial animation */
     opacity: 0;
     margin-top: 150px;
+    /* ---------------------------------- */
 }
 
 .body-container p>a {
@@ -199,6 +201,16 @@ nav a {
     color: rgba(25, 26, 26, 0.7);
     line-height: 3rem;
     letter-spacing: 0.05rem;
+}
+
+.highlighted-container {
+    background-color: rgba(25, 26, 26, 0.1);
+}
+
+.highlighted-container-box {
+    border: 1px solid red;
+    margin: 20px 0;
+    padding: 50px;
 }
 
 /* Leaflet */
