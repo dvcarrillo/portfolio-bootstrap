@@ -1,0 +1,44 @@
+.body-container {
+    margin: 0 !important;
+}
+
+.featured-container {
+    height: 400px;
+    background-color: rgb(51, 51, 51);
+    position: relative;
+}
+
+.featured-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 1vmin 4vw;
+    font-size: 18vmin;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.carousel {
+    padding-top: 50px;
+}
+
+.carousel-cell {
+    width: 66%;
+    height: 300px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+/* cell number */
+
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}

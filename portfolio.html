@@ -15,10 +15,15 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/page-default.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+
+    <!-- Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -40,7 +45,7 @@
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link nav-link-white" href="portfolio.html">portfolio<span
-                            class="sr-only">(current)</span></a>
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-white" href="cv.html">cv</a>
@@ -56,37 +61,15 @@
     </header>
 
     <div class="body-container" id="body-container">
-        <div class="narrow-paragraph">
-            <h2>hi, i am david.</h2>
-            <h3>i love to build user experiences.</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id elementum dui, vel iaculis arcu.
-                Praesent vehicula sem neque, id bibendum lacus porta id. Mauris et metus a est porttitor congue sed at eros.
-                In lacus erat, porttitor eu sodales vel, consequat vel felis. Nunc pellentesque vitae orci non ornare.
-                Aliquam convallis magna in dolor bibendum aliquam. Vivamus a odio ac dui posuere vulputate eu nec tellus.
-                Morbi hendrerit eu lacus eu semper. Duis laoreet ex risus, id sagittis lectus tincidunt vitae. Mauris
-                interdum, urna id mattis posuere, lacus nisi varius lectus, cursus mattis enim urna at leo.
-            </p>
-    
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id elementum dui, vel iaculis arcu.
-                Praesent vehicula sem neque, id bibendum lacus porta id. Mauris et metus a est porttitor congue sed at eros.
-                In lacus erat, porttitor eu sodales vel, consequat vel felis. Nunc pellentesque vitae orci non ornare.
-                Aliquam convallis magna in dolor bibendum aliquam. Vivamus a odio ac dui posuere vulputate eu nec tellus.
-                Morbi hendrerit eu lacus eu semper. Duis laoreet ex risus, id sagittis lectus tincidunt vitae. Mauris
-                interdum, urna id mattis posuere, lacus nisi varius lectus, cursus mattis enim urna at leo.
-            </p>
-        </div>
-    
-        <div class="narrow-paragraph">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id elementum dui, vel iaculis arcu.
-                Praesent vehicula sem neque, id bibendum lacus porta id. Mauris et metus a est porttitor congue sed at eros.
-                In lacus erat, porttitor eu sodales vel, consequat vel felis. Nunc pellentesque vitae orci non ornare.
-                Aliquam convallis magna in dolor bibendum aliquam. Vivamus a odio ac dui posuere vulputate eu nec tellus.
-                Morbi hendrerit eu lacus eu semper. Duis laoreet ex risus, id sagittis lectus tincidunt vitae. Mauris
-                interdum, urna id mattis posuere, lacus nisi varius lectus, cursus mattis enim urna at leo.
-            </p>
+        <div class="featured-container">
+            <h1 class="featured-title">featured</h1>
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+            </div>
         </div>
     </div>
 
@@ -103,9 +86,14 @@
                     <div class="col-lg-6" id="credits-container">
                         <h2>credits</h2>
                         <p>
-                            code & design by me, available on <a href="http://github.com/dvcarrillo/portfolio-bootstrap">github</a></br>
-                            find the displayed photos on my <a href="http://flickr.com/dvcarrillo">flickr profile</a></br>
-                            <span id="social-links-mini" style="display: none;">follow me on <a href="https://github.com/dvcarrillo/">github</a>, <a href="https://www.linkedin.com/in/dvcarrillo/">linkedin</a> and <a href="https://www.flickr.com/photos/davidvargas996/">flickr</a></span>
+                            code & design by me, available on <a
+                                href="http://github.com/dvcarrillo/portfolio-bootstrap">github</a></br>
+                            find the displayed photos on my <a href="http://flickr.com/dvcarrillo">flickr
+                                profile</a></br>
+                            <span id="social-links-mini" style="display: none;">follow me on <a
+                                    href="https://github.com/dvcarrillo/">github</a>, <a
+                                    href="https://www.linkedin.com/in/dvcarrillo/">linkedin</a> and <a
+                                    href="https://www.flickr.com/photos/davidvargas996/">flickr</a></span>
                         </p>
                     </div>
                     <div class="col-sm-6" id="social-links-container">
@@ -114,7 +102,8 @@
                             <a class="button-clear" href="https://github.com/dvcarrillo/">github</a>
                             <a class="button-clear" href="https://www.linkedin.com/in/dvcarrillo/">linkedin</a>
                             <a class="button-clear" href="https://www.flickr.com/photos/davidvargas996/">flickr</a>
-                            <a class="button-clear" href="https://stackoverflow.com/users/4598461/david-vargas">stackoverflow</a>
+                            <a class="button-clear"
+                                href="https://stackoverflow.com/users/4598461/david-vargas">stackoverflow</a>
                         </p>
                     </div>
                 </div>
@@ -129,7 +118,9 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js/page-default.js"></script>
+    <script src="js/page-portfolio.js"></script>
 </body>
 
 </html>
