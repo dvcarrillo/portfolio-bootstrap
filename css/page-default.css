@@ -1,5 +1,6 @@
 * {
     font-family: 'Roboto', sans-serif !important;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 
 /* HEADER & NAVBAR */
@@ -58,7 +59,6 @@ nav a {
     z-index: 1;
     position: relative;
     font-size: 1.1rem;
-    /* color: #1e272e !important; */
     padding: 0.25em 0.5em;
     outline: none;
     border: 1px solid rgba(255, 255, 255, 1);
@@ -204,19 +204,34 @@ nav a {
 }
 
 .highlighted-container {
-    background-color: rgba(25, 26, 26, 0.1);
+    background-color: rgb(242, 242, 242);
 }
 
 .highlighted-container-box {
-    border: 1px solid red;
-    margin: 20px 0;
-    padding: 50px;
+    padding: 40px 50px;
+}
+
+.highlighted-container-box ul li:nth-child(1){
+    font-family: 'Montserrat', sans-serif !important;
+    color: rgb(26, 26, 26);
+    font-size: 7vmax;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.highlighted-container-box ul li:nth-child(2){
+    color: rgb(128, 128, 128);
+    font-size: 1.3em;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
 }
 
 /* Leaflet */
 
 #mapid {
-    height: 320px;
+    height: 350px;
 }
 
 .leaflet-popup-content-wrapper {
