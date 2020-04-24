@@ -209,6 +209,7 @@ nav a {
 
 .highlighted-container-box {
     padding: 40px 50px;
+    cursor: default;
 }
 
 .highlighted-container-box ul li:nth-child(1){
