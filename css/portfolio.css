@@ -27,18 +27,63 @@
     width: 66%;
     height: 300px;
     margin-right: 10px;
-    background: #8C8;
     border-radius: 5px;
-    counter-increment: carousel-cell;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
-/* cell number */
+.carousel-cell .info-container {
+    color: rgb(255, 255, 255);
+    width: 40%;
+    margin: 0 2%;
+    height: 85%;
+    position: relative;
+}
 
-.carousel-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(carousel-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
+.carousel-cell .image-container {
+    width: 40%;
+    margin: 0 5vmax;
+    box-shadow: 0 10px 20px rgba(15, 15, 15, 0.2);
+    border-radius: 10px;
+}
+
+.carousel-cell .image-container img {
+    width: 100%;
+    border-radius: 10px;
+    min-height: 200px;
+    min-width: 250px;
+}
+
+.carousel-cell .info-container h2 {
+    font-weight: 300;
+    font-size: 3vmax;
+    margin: 0;
+}
+
+.carousel-cell .info-container p {
+    font-weight: 300;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.carousel-cell .info-container .tags {
+    opacity: 0.5;
+    font-style: italic;
+    margin: 0 0 10px 0;
+}
+
+.carousel-cell .info-container a {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.flickity-button {
+    display: none;
+}
+
+.flickity-page-dots {
+    display: none;
 }
