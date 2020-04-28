@@ -24,28 +24,32 @@
 }
 
 .carousel-cell {
-    width: 66%;
+    width: 50%;
     height: 300px;
-    margin-right: 10px;
-    border-radius: 5px;
+    margin-right: 100px;
+    border-radius: 10px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2%;
+    box-shadow: 0 10px 20px rgba(15, 15, 15, 0.4);
 }
 
 .carousel-cell .info-container {
-    color: rgb(255, 255, 255);
-    width: 40%;
-    margin: 0 2%;
-    height: 85%;
-    position: relative;
+    color: rgb(51, 51, 51);
+    padding: 0 3%;
+    margin-left: 3%;
+    /* width: 40%;
+    height: 85%; */
+    /* position: relative; */
 }
 
 .carousel-cell .image-container {
-    width: 40%;
-    margin: 0 5vmax;
-    box-shadow: 0 10px 20px rgba(15, 15, 15, 0.2);
+    width: 50%;
+    /* margin-left: 2%; */
+    box-shadow: 0 10px 20px rgba(15, 15, 15, 0.4);
     border-radius: 10px;
 }
 
@@ -76,7 +80,7 @@
 
 .carousel-cell .info-container a {
     font-size: 1rem;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
 }
 
