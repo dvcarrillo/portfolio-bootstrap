@@ -28,9 +28,9 @@
 .info-box {
     position: absolute;
     bottom: 0;
-    padding: 20px;
+    padding: 25px;
     background-color: rgba(0, 0, 0, 0.1);
-    min-height: 230px;
+    min-height: 234px;
     backdrop-filter: blur(20px);
 }
 
@@ -88,7 +88,6 @@
     width: 100px;
     height: 100px;
     background: transparent!important;
-    opacity: 0.6;
 }
 
 .flickity-prev-next-button .arrow {
