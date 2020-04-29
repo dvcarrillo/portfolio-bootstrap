@@ -3,7 +3,7 @@
 }
 
 .featured-container {
-    height: 400px;
+    height: 50vh;
     background-color: rgb(51, 51, 51);
     position: relative;
 }
@@ -16,78 +16,93 @@
     padding: 1vmin 4vw;
     font-size: 18vmin;
     font-weight: 300;
-    color: rgba(255, 255, 255, 0.2);
-}
-
-.carousel {
-    padding-top: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 100;
 }
 
 .carousel-cell {
-    width: 50%;
-    height: 300px;
-    margin-right: 100px;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 2%;
-    box-shadow: 0 10px 20px rgba(15, 15, 15, 0.4);
-}
-
-.carousel-cell .info-container {
-    color: rgb(51, 51, 51);
-    padding: 0 3%;
-    margin-left: 3%;
-    /* width: 40%;
-    height: 85%; */
-    /* position: relative; */
-}
-
-.carousel-cell .image-container {
-    width: 50%;
-    /* margin-left: 2%; */
-    box-shadow: 0 10px 20px rgba(15, 15, 15, 0.4);
-    border-radius: 10px;
-}
-
-.carousel-cell .image-container img {
     width: 100%;
-    border-radius: 10px;
-    min-height: 200px;
-    min-width: 250px;
+    height: 50vh;
 }
 
-.carousel-cell .info-container h2 {
-    font-weight: 300;
-    font-size: 3vmax;
-    margin: 0;
-}
-
-.carousel-cell .info-container p {
-    font-weight: 300;
-    padding: 10px 0;
-    margin: 0;
-}
-
-.carousel-cell .info-container .tags {
-    opacity: 0.5;
-    font-style: italic;
-    margin: 0 0 10px 0;
-}
-
-.carousel-cell .info-container a {
-    font-size: 1rem;
-    /* position: absolute; */
+.info-box {
+    position: absolute;
     bottom: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    min-height: 230px;
+    backdrop-filter: blur(20px);
+}
+
+.info-box>* {
+    margin-left: 80vmin;
+}
+
+.info-box h2 {
+    font-weight: 300;
+    font-size: 5vmin;
+    color: rgba(255, 255, 255, 1);
+}
+
+.info-box p {
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.tags {
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.carousel .agfa {
+    background-image: url("../img/portfolio/agfa.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.carousel .thales {
+    background-image: url("../img/portfolio/thales.jpg");
+    background-repeat: no-repeat;
+    background-position: center 55%;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.carousel .handiroad {
+    background-image: url("../img/portfolio/handiroad.jpg");
+    background-repeat: no-repeat;
+    background-position: center 82%;
+    background-size: cover;
+    background-color: transparent;
 }
 
 .flickity-button {
-    display: none;
+    background: transparent;
+    z-index: 101;
 }
 
-.flickity-page-dots {
+.flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+    background: transparent!important;
+    opacity: 0.6;
+}
+
+.flickity-prev-next-button .arrow {
+    fill: white;
+}
+
+.flickity-prev-next-button.no-svg {
+    color: white;
+}
+
+.flickity-prev-next-button:hover {
+    background: transparent;
+}
+
+.flickity-prev-next-button:disabled {
     display: none;
 }

@@ -19,6 +19,7 @@
 
     <!-- Flickity -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
@@ -63,75 +64,41 @@
     <div class="body-container" id="body-container">
         <div class="featured-container">
             <h1 class="featured-title">featured</h1>
-            <div class="carousel" data-flickity='{ "wrapAround": true }'>
-                <div class="carousel-cell">
-                    <div class="image-container">
-                        <img src="img/portfolio/etroubleshooting.jpg" alt="">
-                    </div>
-                    <div class="info-container">
-                        <h2>thales</h2>
+            <div class="carousel" data-flickity='{ "draggable": false, "wrapAround": true, "autoPlay": false,
+            "pauseAutoPlayOnHover": true, "pageDots": false, "fade": true }'>
+                <div class="carousel-cell agfa">
+                    <div class="info-box">
+                        <h2>orbis : agfa healthcare</h2>
                         <p>
-                            development of an angular application together with a service
-                            on microsoft azure for the aerospatial sector
+                            project description project description project description project description project
+                            description project description project description project description project description
+                            project description project description project description project description
                         </p>
-                        <p class="tags">#angular #java #spring</p>
-                        <!-- <a class="button-clear" href="#">see it on github</a> -->
+                        <p class="tags">#tag1 #tag2 #tag3</p>
                     </div>
                 </div>
-                <div class="carousel-cell">
-                    <div class="image-container">
-                        <img src="img/portfolio/etroubleshooting.jpg" alt="">
-                    </div>
-                    <div class="info-container">
-                        <h2>thales</h2>
+
+                <div class="carousel-cell thales">
+                    <div class="info-box">
+                        <h2>e-troubleshooting : thales group</h2>
                         <p>
-                            development of an angular application together with a service
-                            on microsoft azure for the aerospatial sector
+                            project description project description project description project description project
+                            description project description project description project description project description
+                            project description project description project description project description
                         </p>
-                        <p class="tags">#angular #java #spring</p>
-                        <!-- <a class="button-clear" href="#">see it on github</a> -->
+                        <p class="tags">#tag1 #tag2 #tag3</p>
                     </div>
                 </div>
-                <div class="carousel-cell">
-                    <div class="image-container">
-                        <img src="img/portfolio/etroubleshooting.jpg" alt="">
-                    </div>
-                    <div class="info-container">
-                        <h2>thales</h2>
+
+                <div class="carousel-cell handiroad">
+                    <div class="info-box">
+                        <h2>handiroad</h2>
                         <p>
-                            development of an angular application together with a service
-                            on microsoft azure for the aerospatial sector
+                            project description project description project description project description project
+                            description project description project description project description project description
+                            project description project description project description project description
                         </p>
-                        <p class="tags">#angular #java #spring</p>
-                        <!-- <a class="button-clear" href="#">see it on github</a> -->
-                    </div>
-                </div>
-                <div class="carousel-cell">
-                    <div class="image-container">
-                        <img src="img/portfolio/etroubleshooting.jpg" alt="">
-                    </div>
-                    <div class="info-container">
-                        <h2>thales</h2>
-                        <p>
-                            development of an angular application together with a service
-                            on microsoft azure for the aerospatial sector
-                        </p>
-                        <p class="tags">#angular #java #spring</p>
-                        <!-- <a class="button-clear" href="#">see it on github</a> -->
-                    </div>
-                </div>
-                <div class="carousel-cell">
-                    <div class="image-container">
-                        <img src="img/portfolio/etroubleshooting.jpg" alt="">
-                    </div>
-                    <div class="info-container">
-                        <h2>thales</h2>
-                        <p>
-                            development of an angular application together with a service
-                            on microsoft azure for the aerospatial sector
-                        </p>
-                        <p class="tags">#angular #java #spring</p>
-                        <!-- <a class="button-clear" href="#">see it on github</a> -->
+                        <p class="tags">#tag1 #tag2 #tag3</p>
                     </div>
                 </div>
             </div>
@@ -184,6 +151,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
     <script src="js/page-default.js"></script>
     <script src="js/page-portfolio.js"></script>
 </body>
