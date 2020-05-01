@@ -20,6 +20,10 @@
     z-index: 100;
 }
 
+.carousel {
+    position: relative;
+}
+
 .carousel-cell {
     width: 100%;
     height: 50vh;
@@ -29,8 +33,8 @@
     position: absolute;
     bottom: 0;
     padding: 25px;
-    background-color: rgba(0, 0, 0, 0.1);
-    min-height: 234px;
+    background-color: rgba(51, 51, 51, 0.3);
+    min-height: 215px;
     backdrop-filter: blur(20px);
 }
 
@@ -104,4 +108,34 @@
 
 .flickity-prev-next-button:disabled {
     display: none;
+}
+
+/* RULES FOR SMALLER SCREENS */
+
+/* Hide contact button on lower resolutions */
+
+@media only screen and (max-width: 1050px) {
+    .info-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 25px 44px;
+        background-color: rgba(0, 0, 0, 0.1);
+        height: 100%;
+        backdrop-filter: blur(20px);
+    }
+
+    .info-box>* {
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .info-box h2 {
+        font-weight: 400;
+    }
+
+    .info-box p {
+        font-size: 4vmin;
+    }
 }
