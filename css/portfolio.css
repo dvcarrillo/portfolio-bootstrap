@@ -114,25 +114,7 @@
 
 /* Main page content */
 
-.projects-container {
-    margin-top: 80px;
-}
 
-.project-container {
-    border: 1px solid rgb(217, 217, 217);
-    border-radius: 10px;
-    /* box-shadow: 0 2px 3px rgb(220, 220, 220); */
-}
-
-.projects-container .single {
-    margin: 0 0 30px 0;
-    min-height: 50vmin;
-}
-
-.projects-container .double {
-    min-height: 50vmin;
-    margin-bottom: 30px;
-}
 
 /* RULES FOR SMALLER SCREENS */
 
