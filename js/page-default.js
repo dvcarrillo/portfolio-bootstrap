@@ -18,7 +18,14 @@ $(window).on('load', () => {
         $("#body-container").animate({ "margin-top": "100px" }, { duration: 400, queue: false });
     });
     $('.header-title').fadeIn();
-})
+});
+
+$('#navbar-brand').click(() => {
+    $('#loading-screen').fadeIn();
+    setTimeout(() => {
+        window.location.href = "index.html";
+    }, 500);
+});
 
 setRandomFooterSentence = () => {
     document.querySelector('#footer-title-sentence').innerHTML = footerSentences[Math.floor(Math.random() * footerSentences.length)];
