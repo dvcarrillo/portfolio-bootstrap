@@ -21,10 +21,10 @@ $(window).on('load', () => {
 });
 
 $('#navbar-brand').click(() => {
-    $('#loading-screen').fadeIn();
+    $('#loading-screen').fadeIn(200);
     setTimeout(() => {
         window.location.href = "index.html";
-    }, 500);
+    }, 250);
 });
 
 setRandomFooterSentence = () => {
