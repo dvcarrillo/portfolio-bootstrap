@@ -29,6 +29,13 @@ $(window).on('load', () => {
     });
 })
 
+$('#navbar-brand').click(() => {
+    $('#loading-screen').fadeIn(200);
+    setTimeout(() => {
+        window.location.href = "index.html";
+    }, 250);
+});
+
 setHeaderBackground = (definedBackground) => {
     let imgUrl = `https://raw.githubusercontent.com/dvcarrillo/portfolio-bootstrap/master/img/home-bg/${definedBackground}.jpg`;
 
