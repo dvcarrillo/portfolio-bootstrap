@@ -448,3 +448,9 @@ footer {
         text-align: center;
     }
 }
+
+@media only screen and (max-width: 380px) {
+    .loading-title {
+        display: none;
+    }
+}
