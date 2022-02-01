@@ -37,7 +37,7 @@ $('#navbar-brand').click(() => {
 });
 
 setHeaderBackground = (definedBackground) => {
-    let imgUrl = `https://raw.githubusercontent.com/dvcarrillo/portfolio-bootstrap/master/img/home-bg/${definedBackground}.jpg`;
+    let imgUrl = `https://raw.githubusercontent.com/dvcarrillo/portfolio-bootstrap/master/img/home-bg/${definedBackground}.jpg?raw=true`;
 
     let headerElement;
     if (headerElement = document.getElementById("home-header")) {
